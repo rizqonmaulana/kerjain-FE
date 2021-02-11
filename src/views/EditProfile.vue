@@ -22,7 +22,7 @@
               <img
                 class="rounded-circle profile-img"
                 v-else-if="image"
-                :src="`${url}fileUploadsApiKerjain/workers/${image}`"
+                :src="image"
               />
 
               <img
