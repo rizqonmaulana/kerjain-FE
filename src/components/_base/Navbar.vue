@@ -73,9 +73,13 @@
                     class="user-img"
                   >
                   </b-avatar>
-                  <b-avatar v-else src="https://placekitten.com/300/300">
-                  </b-avatar
-                ></template>
+                  <img
+                    style="width: 40px; height: 40px; border-radius: 50%"
+                    v-else
+                    src="../../assets/user.png"
+                    alt=""
+                  />
+                </template>
                 <b-dropdown-item @click="handleMyProfile"
                   >My Profile</b-dropdown-item
                 >
