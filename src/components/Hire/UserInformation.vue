@@ -26,7 +26,7 @@
     <div class="skill-div">
       <p class="skill-title">Skill</p>
       <div class="skill" v-for="(item, index) in skills" :key="index">
-        {{ item }}
+        {{ item.skill_name }}
       </div>
     </div>
   </div>
@@ -41,7 +41,7 @@ export default {
     }
   },
   computed: {
-    ...mapGetters({ userId: 'getUserById', skills: 'getSkillsUser' })
+    ...mapGetters({ userId: 'getUserById', skills: 'getSkill' })
   },
   methods: {}
 }
