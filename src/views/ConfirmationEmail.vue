@@ -1,4 +1,3 @@
-/* eslint-disable */
 <template>
   <div class="confirmationEmail">
     <b-container>
@@ -30,7 +29,8 @@ export default {
           this.$router.push('/loginuser')
         })
         .catch(err => {
-          console.log(err)
+           // eslint-disable-next-line
+           errorAlert(err.data.msg)
         })
     }
   }

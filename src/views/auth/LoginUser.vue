@@ -1,4 +1,3 @@
-/* eslint-disable */
 <template>
   <div>
     <b-container class="login">
@@ -86,7 +85,6 @@ export default {
           this.$router.push('/myprofile')
         })
         .catch(err => {
-          console.log(err)
           this.errorAlert(err.data.msg)
         })
     },
